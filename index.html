@@ -14,11 +14,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Strato Lab | Home Lab • AI • Dad Projects</title>
-    <link rel="icon" type="image/png" href="images/avatar.png"> <!-- TODO: replace images/avatar.png + avatar@2x.png with your own logo/headshot -->
+    <link rel="icon" type="image/png" href="images/avatar.png">
 
     <meta name="description" content="Dad building a self-hosted, connected home — home lab, self-hosted AI, smart home, and the aviation/space builds that started it all. Code + gear below.">
 
-    <!-- TODO: update this once your GitHub Pages URL or custom domain is live -->
     <link rel="canonical" href="https://stratolabhq.github.io">
 
     <meta name="author" content="Strato Lab">
@@ -43,6 +42,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/brands.css">
+    <link rel="stylesheet" href="css/custom.css">
 
   </head>
 
@@ -52,7 +52,6 @@
         <div class="column">
           <main>
 
-            <!-- TODO: replace with your own logo, headshot, or brand mark (place file in /images) -->
             <img class="avatar avatar--rounded" src="images/avatar.png" srcset="images/avatar@2x.png 2x" alt="Strato Lab logo" width="128" height="128" fetchpriority="high">
 
             <h1>Strato Lab</h1>
@@ -67,13 +66,26 @@
               <!-- GitHub — open source project docs -->
               <a class="button button-github" href="https://github.com/stratolabhq" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/github.svg" alt="GitHub Logo">Open-source projects on GitHub</a>
 
-              <!-- Home lab & network gear list -->
-              <!-- TODO: swap in your full gear list link once it exists (a page, doc, or Amazon list) -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/generic-computer.svg" alt="Computer Icon">Home lab &amp; network gear</a>
+              <!-- Home lab & network gear — expandable list of Amazon Associates links (tag: stratolabhq-20) -->
+              <details class="gear-group">
+                <summary class="button button-default"><img class="icon" aria-hidden="true" src="images/icons/generic-computer.svg" alt="Computer Icon">Home lab &amp; network gear (#ad)</summary>
+                <div class="gear-group__items">
+                  <p class="gear-note">Amazon affiliate links — I may earn a commission, at no extra cost to you.</p>
+                  <a class="button button-amazon" href="https://www.amazon.com/dp/B0BPSGJN7T?tag=stratolabhq-20" target="_blank" rel="noopener sponsored"><img class="icon" aria-hidden="true" src="images/icons/amazon.svg" alt="Amazon Logo">GL.iNet Beryl AX router</a>
+                  <a class="button button-amazon" href="https://www.amazon.com/dp/B00A121WN6?tag=stratolabhq-20" target="_blank" rel="noopener sponsored"><img class="icon" aria-hidden="true" src="images/icons/amazon.svg" alt="Amazon Logo">TP-Link 8-port switch</a>
+                  <a class="button button-amazon" href="https://www.amazon.com/dp/B0CQN7WXRS?tag=stratolabhq-20" target="_blank" rel="noopener sponsored"><img class="icon" aria-hidden="true" src="images/icons/amazon.svg" alt="Amazon Logo">ADS-B antenna (1090/978)</a>
+                  <a class="button button-amazon" href="https://www.amazon.com/dp/B0BMKZCKTF?tag=stratolabhq-20" target="_blank" rel="noopener sponsored"><img class="icon" aria-hidden="true" src="images/icons/amazon.svg" alt="Amazon Logo">RTL-SDR Blog V3</a>
+                </div>
+              </details>
 
-              <!-- Smart home gear — confirmed ASIN example: SMLIGHT SLZB-06 PoE Zigbee Coordinator -->
-              <!-- #ad — Amazon Associates link, stratolabhq-20 tracking tag applied -->
-              <a class="button button-amazon" href="https://www.amazon.com/dp/B0D6W46P7Z?tag=stratolabhq-20" target="_blank" rel="noopener sponsored"><img class="icon" aria-hidden="true" src="images/icons/amazon.svg" alt="Amazon Logo">Smart home gear (#ad)</a>
+              <!-- Smart home gear — expandable list of Amazon Associates links (tag: stratolabhq-20) -->
+              <details class="gear-group">
+                <summary class="button button-default"><img class="icon" aria-hidden="true" src="images/icons/generic-cloud.svg" alt="Cloud Icon">Smart home gear (#ad)</summary>
+                <div class="gear-group__items">
+                  <p class="gear-note">Amazon affiliate links — I may earn a commission, at no extra cost to you.</p>
+                  <a class="button button-amazon" href="https://www.amazon.com/dp/B0D6W46P7Z?tag=stratolabhq-20" target="_blank" rel="noopener sponsored"><img class="icon" aria-hidden="true" src="images/icons/amazon.svg" alt="Amazon Logo">SLZB-06 Zigbee gateway</a>
+                </div>
+              </details>
 
               <!-- Contact / collab -->
               <a class="button button-default" href="mailto:stratolabhq@gmail.com" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/generic-email.svg" alt="Email Icon">Contact / collab</a>

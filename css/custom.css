@@ -1,0 +1,60 @@
+/* Strato Lab — additions on top of LittleLink.
+   Kept separate so the upstream css/ files stay untouched for future merges. */
+
+/* Collapsible gear groups — native <details>, no JavaScript
+   –––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+.gear-group {
+	width: 18.75rem;            /* match .button width */
+	max-width: calc(100% - 1.5rem);
+	margin: 0 auto 1rem;
+}
+
+/* The <summary> is styled by adding .button .button-default in the markup.
+   These rules just remove the default disclosure triangle and add our own. */
+.gear-group > summary {
+	width: 100%;
+	margin-bottom: 0;
+	list-style: none;
+}
+.gear-group > summary::-webkit-details-marker { display: none; }
+
+.gear-group > summary::after {
+	content: "";
+	width: 0;
+	height: 0;
+	margin-left: 0.5rem;
+	border: 0.3rem solid transparent;
+	border-top-color: currentColor;
+	transform: translateY(0.15rem);
+	transition: transform 0.15s ease;
+}
+.gear-group[open] > summary::after {
+	transform: translateY(-0.15rem) rotate(180deg);
+}
+
+.gear-group__items {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 0.75rem;
+}
+.gear-group__items .button {
+	width: 17.25rem;           /* slightly inset from the summary */
+	min-height: 2.75rem;
+	font-size: 1rem;
+	margin-bottom: 0.5rem;
+}
+.gear-group__items .button:last-child { margin-bottom: 0; }
+
+.gear-note {
+	max-width: 17.25rem;
+	margin: 0 auto 0.5rem;
+	font-size: 0.8125rem;
+	line-height: 1.4;
+	opacity: 0.75;
+	text-align: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.gear-group > summary::after { transition: none; }
+}
