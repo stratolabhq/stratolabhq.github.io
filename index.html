@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 
 <!--
-  To change the theme, change the class on the html tag below to one of:
-  - theme-auto: Automatically switches based on user's system preferences
-  - theme-light: Forces light theme
-  - theme-dark: Forces dark theme
+  Theme is forced dark. To change, swap the class on the html tag below:
+  - theme-auto: follow the visitor's system preference
+  - theme-light: force light
+  - theme-dark: force dark
 -->
 
-<html class="theme-auto" lang="en">
+<html class="theme-dark" lang="en">
 
   <head>
     <meta charset="utf-8">
@@ -22,8 +22,7 @@
 
     <meta name="author" content="Strato Lab">
 
-    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#121212">
 
     <!-- Social Sharing (Open Graph & Twitter) -->
     <meta property="og:type" content="website">
@@ -44,9 +43,13 @@
     <link rel="stylesheet" href="css/brands.css">
     <link rel="stylesheet" href="css/custom.css">
 
+    <script defer src="js/constellation.js"></script>
+
   </head>
 
 <body>
+
+    <canvas id="constellation" aria-hidden="true"></canvas>
 
     <div class="container">
         <div class="column">
